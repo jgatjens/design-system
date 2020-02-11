@@ -7,56 +7,56 @@
 
 
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
-
+import {
+  Data,
+} from './components/copyright/copyright';
 
 export namespace Components {
-  interface NiEamTest {
-    /**
-    * The first name
-    */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
+  interface NiCopyright {
+    'data': Data;
   }
+  interface NiFooter {}
+  interface NiGlobalCss {}
 }
 
 declare global {
 
 
-  interface HTMLNiEamTestElement extends Components.NiEamTest, HTMLStencilElement {}
-  var HTMLNiEamTestElement: {
-    prototype: HTMLNiEamTestElement;
-    new (): HTMLNiEamTestElement;
+  interface HTMLNiCopyrightElement extends Components.NiCopyright, HTMLStencilElement {}
+  var HTMLNiCopyrightElement: {
+    prototype: HTMLNiCopyrightElement;
+    new (): HTMLNiCopyrightElement;
+  };
+
+  interface HTMLNiFooterElement extends Components.NiFooter, HTMLStencilElement {}
+  var HTMLNiFooterElement: {
+    prototype: HTMLNiFooterElement;
+    new (): HTMLNiFooterElement;
+  };
+
+  interface HTMLNiGlobalCssElement extends Components.NiGlobalCss, HTMLStencilElement {}
+  var HTMLNiGlobalCssElement: {
+    prototype: HTMLNiGlobalCssElement;
+    new (): HTMLNiGlobalCssElement;
   };
   interface HTMLElementTagNameMap {
-    'ni-eam-test': HTMLNiEamTestElement;
+    'ni-copyright': HTMLNiCopyrightElement;
+    'ni-footer': HTMLNiFooterElement;
+    'ni-global-css': HTMLNiGlobalCssElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface NiEamTest {
-    /**
-    * The first name
-    */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
+  interface NiCopyright {
+    'data'?: Data;
   }
+  interface NiFooter {}
+  interface NiGlobalCss {}
 
   interface IntrinsicElements {
-    'ni-eam-test': NiEamTest;
+    'ni-copyright': NiCopyright;
+    'ni-footer': NiFooter;
+    'ni-global-css': NiGlobalCss;
   }
 }
 
@@ -66,7 +66,9 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
-      'ni-eam-test': LocalJSX.NiEamTest & JSXBase.HTMLAttributes<HTMLNiEamTestElement>;
+      'ni-copyright': LocalJSX.NiCopyright & JSXBase.HTMLAttributes<HTMLNiCopyrightElement>;
+      'ni-footer': LocalJSX.NiFooter & JSXBase.HTMLAttributes<HTMLNiFooterElement>;
+      'ni-global-css': LocalJSX.NiGlobalCss & JSXBase.HTMLAttributes<HTMLNiGlobalCssElement>;
     }
   }
 }

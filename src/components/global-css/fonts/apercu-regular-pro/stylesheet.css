@@ -1,0 +1,27 @@
+/*
+ * Web Fonts from colophon-foundry.org
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Colophon Foundry. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2020 Colophon Foundry
+ *
+ * Licenced to Organic Inc Organic
+ */
+
+@font-face {
+  font-family: "apercu-pro";
+  src: url("./build/fonts/apercu-regular-pro/apercu-regular-pro.eot");
+  src: url("./build/fonts/apercu-regular-pro/apercu-regular-pro.eot?#iefix")
+      format("embedded-opentype"),
+    url("./build/fonts/apercu-regular-pro/apercu-regular-pro.woff2")
+      format("woff2"),
+    url("./build/fonts/apercu-regular-pro/apercu-regular-pro.woff")
+      format("woff"),
+    url("./build/fonts/apercu-regular-pro/apercu-regular-pro.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
