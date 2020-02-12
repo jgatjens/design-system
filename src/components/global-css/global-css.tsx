@@ -28,7 +28,6 @@ const niGlobalCss = css`
 })
 export class NiGlobalCss {
   render() {
-    // console.log(niGlobalCss)
     return <Host class={niGlobalCss}></Host>
   }
 }
