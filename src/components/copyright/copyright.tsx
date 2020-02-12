@@ -7,18 +7,19 @@ import { Icon } from "./icon"
   shadow: false,
 })
 export class Copyright {
-  @Prop() title: string = "©2020 Organic, Inc. All rights reserved"
+  @Prop() text: string = "©2020 Organic, Inc. All rights reserved"
+  @Prop() bg: string = "#000"
   @Prop() items: any = [
     { text: "Privacy Policy" },
     { text: "Consumer Privacy Shield" },
   ]
-
   render() {
-    console.log(this.items)
     const items = JSON.parse(this.items)
+    const bg = { backgroundColor: this.bg }
+
     return (
-      <section class={styles.container}>
-        <p class={styles.text}>{this.title}</p>
+      <section class={styles.container} style={bg}>
+        <p class={styles.text}>{this.text}</p>
         <a href="/">
           <Icon color="#fff" />
         </a>

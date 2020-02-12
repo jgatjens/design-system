@@ -1,4 +1,4 @@
-import { Component, h, FunctionalComponent } from "@stencil/core"
+import { Component, h, FunctionalComponent, Prop } from "@stencil/core"
 import styles from "./footer.css.js"
 
 interface CenterColProps {
@@ -22,22 +22,18 @@ const CenterCol: FunctionalComponent<CenterColProps> = props => (
   </div>
 )
 
-// const CenterCol = props => (
-//   <Box sx={{ width: ["100%", 307] }}>
-//     <Button variant="secondary" icon href="#">
-//       Contact us
-//     </Button>
-//   </Box>
-// )
-
 @Component({
   tag: "ni-footer",
   shadow: false,
 })
 export class Footer {
+  @Prop() bg: string = "#000"
+
   render() {
+    const bg = { backgroundColor: this.bg }
+
     return (
-      <footer class={styles.container}>
+      <footer class={styles.container} style={bg}>
         <div class={styles.subTitleContainer}>
           <p class={styles.subTitle}>Get in Touch</p>
         </div>

@@ -2,11 +2,11 @@ import { css } from "emotion"
 
 const container = css`
   font-family: "apercu-pro";
+  background-color: black;
   display: flex;
   height: 103px;
   align-items: center;
   color: white;
-  background-color: black;
   justify-content: space-between;
   padding: 0 25px;
 

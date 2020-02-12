@@ -17,10 +17,13 @@ export namespace Components {
     'items': any;
   }
   interface NiCopyright {
+    'bg': string;
     'items': any;
-    'title': string;
+    'text': string;
   }
-  interface NiFooter {}
+  interface NiFooter {
+    'bg': string;
+  }
   interface NiGlobalCss {}
 }
 
@@ -73,10 +76,13 @@ declare namespace LocalJSX {
     'items'?: any;
   }
   interface NiCopyright {
+    'bg'?: string;
     'items'?: any;
-    'title'?: string;
+    'text'?: string;
   }
-  interface NiFooter {}
+  interface NiFooter {
+    'bg'?: string;
+  }
   interface NiGlobalCss {}
 
   interface IntrinsicElements {
