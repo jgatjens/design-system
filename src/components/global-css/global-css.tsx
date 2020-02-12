@@ -13,8 +13,8 @@ const niGlobalCss = css`
 
 @Component({
   tag: "ni-global-css",
-  // shadow: false,
-  assetsDirs: ["fonts", "fonts/apercu-regular-pro"],
+  shadow: false,
+  assetsDirs: ["fonts"],
   styleUrls: [
     // Apercu pro
     "./fonts/apercu-regular-pro/stylesheet.css",

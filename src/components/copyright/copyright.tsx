@@ -2,10 +2,6 @@ import { Component, h, Prop } from "@stencil/core"
 import styles from "./copyright.css.js"
 import { Icon } from "./icon"
 
-export interface item {
-  text?: string
-}
-
 @Component({
   tag: "ni-copyright",
   shadow: false,
