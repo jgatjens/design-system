@@ -7,13 +7,12 @@
 
 
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
-import {
-  Data,
-} from './components/copyright/copyright';
+
 
 export namespace Components {
   interface NiCopyright {
-    'data': Data;
+    'items': any;
+    'title': string;
   }
   interface NiFooter {}
   interface NiGlobalCss {}
@@ -48,7 +47,8 @@ declare global {
 
 declare namespace LocalJSX {
   interface NiCopyright {
-    'data'?: Data;
+    'items'?: any;
+    'title'?: string;
   }
   interface NiFooter {}
   interface NiGlobalCss {}
