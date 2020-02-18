@@ -1,7 +1,7 @@
 import { Config } from "@stencil/core"
 
 export const config: Config = {
-  namespace: "ni-aem",
+  namespace: "ni-stencil",
   bundles: [
     { components: ["ni-global-css"] },
     { components: ["ni-footer", "ni-cities", "ni-circle-text"] },

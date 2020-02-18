@@ -1,6 +1,6 @@
 {
   "name": "ni",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Design System Example NI",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
