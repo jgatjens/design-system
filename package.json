@@ -1,7 +1,7 @@
 {
-  "name": "ni-eam",
+  "name": "ni",
   "version": "0.0.5",
-  "description": "Stencil Component Starter",
+  "description": "Design System Example NI",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",
@@ -9,7 +9,7 @@
   "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/ni-eam/ni-eam.js",
+  "unpkg": "dist/ni-stencil/ni-stencil.js",
   "files": [
     "dist/",
     "loader/"

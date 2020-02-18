@@ -13,8 +13,28 @@ export class Copyright {
     { text: "Privacy Policy" },
     { text: "Consumer Privacy Shield" },
   ]
+
+  componentWillLoad() {
+    try {
+      this.items = JSON.parse(this.items)
+    } catch (error) {
+      this.items = []
+      console.warn("<copyright item={JSON String}> cant parse json string")
+    }
+  }
+
+  renderLinks() {
+    if (this.items.length > 0) {
+      return this.items.map(item => (
+        <a href="#">
+          {item.text}
+          <span>|</span>
+        </a>
+      ))
+    }
+  }
+
   render() {
-    const items = JSON.parse(this.items)
     const bg = { backgroundColor: this.bg }
 
     return (
@@ -23,14 +43,7 @@ export class Copyright {
         <a href="/">
           <Icon color="#fff" />
         </a>
-        <nav class={styles.links}>
-          {items.map(item => (
-            <a href="#">
-              {item.text}
-              <span>|</span>
-            </a>
-          ))}
-        </nav>
+        <nav class={styles.links}>{this.renderLinks()}</nav>
       </section>
     )
   }
