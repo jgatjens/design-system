@@ -47,7 +47,7 @@ CircleText.propTypes = {
 };
 
 CircleText.defaultProps = {
-  text: "hello@organic.com",
+  text: "jgatjens@gmail.com",
   image: defaultImage
 };
 

@@ -1,7 +1,8 @@
 {
   "name": "ni-react",
+  "description": "Testing web components",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "main": "build/index.js",
   "module": "build/index.es.js",
   "files": [

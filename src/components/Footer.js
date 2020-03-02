@@ -1,10 +1,10 @@
-import React from "react"
-import PropTypes from "prop-types"
-import media from "./media"
-import Button from "./Buttons"
-import Cities from "./Cities"
-import CircleText from "./CircleText"
-import styled from "@emotion/styled"
+import React from "react";
+import PropTypes from "prop-types";
+import media from "./media";
+import Button from "./Buttons";
+import Cities from "./Cities";
+import CircleText from "./CircleText";
+import styled from "@emotion/styled";
 
 const FooterContainer = styled.footer`
   background-color: #000;
@@ -41,11 +41,11 @@ const FooterContainer = styled.footer`
       margin-top: 50px;
     }
   `}
-`
+`;
 
 const SubTitle = styled.p`
   color: white;
-`
+`;
 
 const Title = styled.h2`
   font-size: 40px;
@@ -61,14 +61,14 @@ const Title = styled.h2`
     line-height: 58px;
     margin-bottom: 110px;
   `}
-`
+`;
 
 const Mobile = styled.div`
   display: block;
   ${media.desktop`
     display: none;
   `}
-`
+`;
 
 const RightCol = styled.div`
   display: none;
@@ -77,14 +77,14 @@ const RightCol = styled.div`
     width: 205px;
     display: block;
   `}
-`
+`;
 
 const EmailCities = () => (
   <React.Fragment>
     <CircleText />
     <Cities />
   </React.Fragment>
-)
+);
 
 const CenterCol = props => (
   <div>
@@ -98,7 +98,7 @@ const CenterCol = props => (
       {props.btn.text}
     </Button>
   </div>
-)
+);
 
 const Footer = props => (
   <React.Fragment>
@@ -112,24 +112,24 @@ const Footer = props => (
       </RightCol>
     </FooterContainer>
   </React.Fragment>
-)
+);
 
 Footer.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
   btn: PropTypes.shape({
     text: PropTypes.string,
-    link: PropTypes.string,
-  }),
-}
+    link: PropTypes.string
+  })
+};
 
 Footer.defaultProps = {
   title: "Drop us a line or two or three",
   subtitle: "Get in Touch",
   btn: {
     text: "Contact us",
-    link: "mailto:friends@organic.com",
-  },
-}
+    link: "mailto:jgatjens@gmail.com"
+  }
+};
 
-export default Footer
+export default Footer;

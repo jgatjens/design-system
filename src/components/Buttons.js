@@ -1,16 +1,16 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
-const DsButton = () => {
-  return <button></button>
-}
+const DsButton = props => {
+  return <button>{props.text}</button>;
+};
 
 DsButton.propTypes = {
-  text: PropTypes.string,
-}
+  text: PropTypes.string
+};
 
 DsButton.defaultProps = {
-  text: "Apply for this role",
-}
+  text: "Apply for this role"
+};
 
-export default DsButton
+export default DsButton;

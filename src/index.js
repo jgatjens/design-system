@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Copyright, Footer } from "./lib";
 
-// console.log(Copyright);
 const App = () => (
   <div>
     <Footer />
