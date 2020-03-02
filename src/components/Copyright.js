@@ -1,8 +1,8 @@
-import React from "react"
-import styled from "@emotion/styled"
-import PropTypes from "prop-types"
-import { LogoLetters } from "./Logo"
-import media from "./media"
+import React from "react";
+import styled from "@emotion/styled";
+import PropTypes from "prop-types";
+import { LogoLetters } from "./Logo";
+import media from "./media";
 
 const Container = styled.section`
   display: flex;
@@ -27,11 +27,11 @@ const Container = styled.section`
       margin: 25px 0 10px 0;
     }
   }
-`
+`;
 
 const CopyrightText = styled.p`
   font-size: 10px;
-`
+`;
 
 const Links = styled.nav`
   font-size: 10px;
@@ -42,7 +42,7 @@ const Links = styled.nav`
   span {
     padding: 0 8px;
   }
-`
+`;
 
 const Copyright = props => (
   <Container {...props}>
@@ -59,7 +59,7 @@ const Copyright = props => (
       ))}
     </Links>
   </Container>
-)
+);
 
 Copyright.propTypes = {
   bgColor: PropTypes.string,
@@ -68,19 +68,19 @@ Copyright.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       text: PropTypes.string,
-      link: PropTypes.string,
+      link: PropTypes.string
     })
-  ),
-}
+  )
+};
 
 Copyright.defaultProps = {
   bgColor: "#000000",
   color: "#ffffff",
-  title: "©2020 Organic, Inc. All rights reserved",
+  title: "©2020 jgatjens, Inc. All rights reserved",
   items: [
     { text: "Privacy Policy", link: "#" },
-    { text: "Consumer Privacy Shield", link: "#" },
-  ],
-}
+    { text: "Consumer Privacy Shield", link: "#" }
+  ]
+};
 
-export default Copyright
+export default Copyright;
