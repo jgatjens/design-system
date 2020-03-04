@@ -20,7 +20,7 @@ const container = css`
 `
 
 const bgImage = css`
-  background-image: url(${getAssetPath(`./assets/footer-email.png`)});
+  background-image: url("./assets/footer-email.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;

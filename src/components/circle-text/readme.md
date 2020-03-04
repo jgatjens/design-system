@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default               |
-| -------- | --------- | ----------- | -------- | --------------------- |
-| `text`   | `text`    |             | `string` | `"hello@organic.com"` |
+| Property | Attribute | Description | Type     | Default                |
+| -------- | --------- | ----------- | -------- | ---------------------- |
+| `text`   | `text`    |             | `string` | `"jgatjens@gmail.com"` |
 
 
 ## Dependencies

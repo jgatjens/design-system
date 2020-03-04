@@ -7,11 +7,11 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default                                                                          |
-| -------- | --------- | ----------- | -------- | -------------------------------------------------------------------------------- |
-| `bg`     | `bg`      |             | `string` | `"#000"`                                                                         |
-| `items`  | `items`   |             | `any`    | `[     { text: "Privacy Policy" },     { text: "Consumer Privacy Shield" },   ]` |
-| `text`   | `text`    |             | `string` | `"©2020 Organic, Inc. All rights reserved"`                                      |
+| Property | Attribute | Description | Type     | Default                                          |
+| -------- | --------- | ----------- | -------- | ------------------------------------------------ |
+| `bg`     | `bg`      |             | `string` | `"#000"`                                         |
+| `items`  | `items`   |             | `any`    | `undefined`                                      |
+| `text`   | `text`    |             | `string` | `"©2020 jgatjens.com, Inc. All rights reserved"` |
 
 
 ----------------------------------------------
