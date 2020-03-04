@@ -1,7 +1,7 @@
 {
-  "name": "ni",
-  "version": "0.0.7",
-  "description": "Design System Example NI",
+  "name": "ni-stencil",
+  "version": "0.0.1",
+  "description": "Testing web components ",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "es2015": "dist/esm/index.mjs",

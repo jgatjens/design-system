@@ -7,7 +7,7 @@ import styles from "./circle-text.css.js"
   assetsDir: "assets",
 })
 export class CircleText {
-  @Prop() text: string = "hello@organic.com"
+  @Prop() text: string = "jgatjens@gmail.com"
 
   render() {
     return (

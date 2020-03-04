@@ -2,36 +2,34 @@ import { Component, h, Prop } from "@stencil/core"
 import styles from "./copyright.css.js"
 import { Icon } from "./icon"
 
+const items = [{ text: "Privacy Policy" }, { text: "Consumer Privacy Shield" }]
+
 @Component({
   tag: "ni-copyright",
   shadow: false,
 })
 export class Copyright {
-  @Prop() text: string = "©2020 Organic, Inc. All rights reserved"
+  @Prop() text: string = "©2020 jgatjens.com, Inc. All rights reserved"
   @Prop() bg: string = "#000"
-  @Prop() items: any = [
-    { text: "Privacy Policy" },
-    { text: "Consumer Privacy Shield" },
-  ]
+  @Prop() items: any
 
   componentWillLoad() {
     try {
       this.items = JSON.parse(this.items)
     } catch (error) {
-      this.items = []
-      console.warn("<copyright item={JSON String}> cant parse json string")
+      this.items = items
+      console.warn("<copyright items={JSON String}> cant parse json string")
     }
   }
 
   renderLinks() {
-    if (this.items.length > 0) {
-      return this.items.map(item => (
-        <a href="#">
-          {item.text}
-          <span>|</span>
-        </a>
-      ))
-    }
+    return this.items.map((item, i) => (
+      <a href="#">
+        {item.text}
+
+        {i < this.items.length - 1 ? <span>|</span> : ""}
+      </a>
+    ))
   }
 
   render() {

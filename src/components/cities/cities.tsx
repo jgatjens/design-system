@@ -7,9 +7,9 @@ import styles from "./cities.css.js"
 })
 export class Cities {
   @Prop() items: any = [
-    { city: "New York", phone: "(212) 967-9087" },
-    { city: "San Francisco", phone: "(415) 967-9087" },
-    { city: "London", phone: "(020) 967-9087" },
+    { city: "Heredia", phone: "(212) 967-9087" },
+    { city: "Cartago", phone: "(415) 967-9087" },
+    { city: "Limon", phone: "(020) 967-9087" },
   ]
 
   render() {
