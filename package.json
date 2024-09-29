@@ -54,7 +54,7 @@
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.13",
     "@svgr/rollup": "^5.2.0",
-    "rollup": "^1.31.1",
+    "rollup": "^2.79.2",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-postcss": "^2.1.1",
     "theme-ui": "^0.3.1"
